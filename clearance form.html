@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maasai Mara University - Student Clearance Form</title>
+
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background: #f4f6f9;
+    }
+
+    .container{
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2{
+      text-align: center;
+      margin: 5px;
+    }
+
+    .logo{
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: darkgreen;
+    }
+
+    .section{
+      margin-top: 25px;
+    }
+
+    label{
+      font-weight: bold;
+      display: block;
+      margin-top: 12px;
+    }
+
+    input, select, textarea{
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    table{
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td{
+      border: 1px solid #000;
+    }
+
+    th, td{
+      padding: 10px;
+      text-align: left;
+    }
+
+    th{
+      background: #e0e0e0;
+    }
+
+    .signature{
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .sign-box{
+      width: 45%;
+    }
+
+    .line{
+      border-top: 1px solid black;
+      margin-top: 50px;
+    }
+
+    .btn{
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    button{
+      padding: 12px 25px;
+      background: darkgreen;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover{
+      background: green;
+    }
+
+    @media print{
+      button{
+        display: none;
+      }
+
+      body{
+        background: white;
+      }
+
+      .container{
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="logo">
+      MAASAI MARA UNIVERSITY
+    </div>
+
+    <h1>STUDENT CLEARANCE FORM</h1>
+    <h2>Academic Year 2026/2027</h2>
+
+    <!-- Student Details -->
+    <div class="section">
+      <h3>Student Information</h3>
+
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter full name">
+
+      <label>Admission Number</label>
+      <input type="text" placeholder="Enter admission number">
+
+      <label>School / Faculty</label>
+      <input type="text" placeholder="Enter school or faculty">
+
+      <label>Department</label>
+      <input type="text" placeholder="Enter department">
+
+      <label>Course</label>
+      <input type="text" placeholder="Enter course">
+
+      <label>Year of Study</label>
+      <select>
+        <option>Select Year</option>
+        <option>Year 1</option>
+        <option>Year 2</option>
+        <option>Year 3</option>
+        <option>Year 4</option>
+      </select>
+
+      <label>Phone Number</label>
+      <input type="tel" placeholder="Enter phone number">
+    </div>
+
+    <!-- Clearance Table -->
+    <div class="section">
+      <h3>Departmental Clearance</h3>
+
+      <table>
+        <tr>
+          <th>Department</th>
+          <th>Status</th>
+          <th>Signature & Stamp</th>
+          <th>Date</th>
+        </tr>
+
+        <tr>
+          <td>Library</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Finance Office</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Hostel Department</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>ICT Department</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Dean of Students</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Registrar Academic Affairs</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Comments -->
+    <div class="section">
+      <label>Additional Comments</label>
+      <textarea rows="4" placeholder="Write comments here..."></textarea>
+    </div>
+
+    <!-- Signatures -->
+    <div class="signature">
+
+      <div class="sign-box">
+        <p>Student Signature</p>
+        <div class="line"></div>
+      </div>
+
+      <div class="sign-box">
+        <p>Official Signature</p>
+        <div class="line"></div>
+      </div>
+
+    </div>
+
+    <!-- Print Button -->
+    <div class="btn">
+      <button onclick="window.print()">Print Clearance Form</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
